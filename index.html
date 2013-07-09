@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja-JP" lang="ja-JP">
+<head>
+  <meta charset="utf-8" />
+  <meta name="copyright" content="" />
+  <meta name="keywords" content="DUMMY DUMMY DUMMY DUMMY" />
+  <meta name="discription" content="DUMMY DUMMY DUMMY DUMMY" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="shortcut icon" href="" />
+  <link rel="apple-touch-icon-precomposed" href="" />
+  <link rel="stylesheet" type="text/css" href="" />
+  <title>title</title>
+</head>
+<body>
+	<!-- template -->
+	<div id="mainTemplateArea">
+		<script type="text/template" id="mainTemplate">
+		<ul>
+			<% _.each(data, function(item) { %>
+			<li>
+				<p><%= item.priority %></p>
+				<a href="<%= item.linkUrl %>" title="<%= item.name %>" target="_blank"><%= item.name %></a>
+			</li>
+			<% }); %>
+		</ul>
+		</script>
+	</div>
+
+	<!-- library -->
+	<script src="js/lib/jquery-1.10.2.js"></script>
+	<script src="js/lib/underscore.js"></script>
+	<script src="js/lib/backbone.js"></script>
+	<!-- custom -->
+	<script src="js/apiService.js"></script>
+	<script src="js/page_index.js"></script>
+	<script src="js/partialModel.js"></script>
+	<script src="js/mainView.js"></script>
+</body>
+</html>
